@@ -1,6 +1,6 @@
 """Eliminar de una pila todos los elementos impares, es decir que en la misma solo queden números pares."""
 
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio
+from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 pila_auxiliar = pila()
@@ -22,5 +22,4 @@ while pila_vacia(mi_pila) == False:
 while pila_vacia(pila_auxiliar) == False:
     dato = desapilar(pila_auxiliar)
     apilar(mi_pila, dato)
-    dato = desapilar(mi_pila)
     print(dato)

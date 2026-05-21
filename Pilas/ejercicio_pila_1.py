@@ -1,6 +1,6 @@
 """Determinar el número de ocurrencias de un determinado elemento en una pila."""
 
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio
+from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 corte = int(input("ingrese 1 para ingresar datos 0 para salir:  "))
 mi_pila = pila()

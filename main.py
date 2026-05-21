@@ -86,7 +86,7 @@ lista_ejercicios_pilas = """
 print("Bienvenido al sistema de ejercicios")
 while (True):
     print("")
-    opcion = input("Que ejercicios desea ver (Pilas): ").lower()
+    opcion = input("Que tipo ejercicios desea ver (Pilas): ").lower()
     if (opcion == "pilas"):
         print(lista_ejercicios_pilas)
         opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
