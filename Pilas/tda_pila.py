@@ -40,7 +40,7 @@ def tamanio(pila):
     return pila.tamanio
 
 def barrido(pila):
-    paux = Pila()
+    paux = pila()
     while (not pila_vacia(pila)):
         dato = desapilar(pila)
         print(dato.info)
