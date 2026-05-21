@@ -19,4 +19,9 @@ for dato in lista:
         del lista[0]
         del lista[-1]
     else:
-        print("No es palindromo")
+        break
+
+if len(lista) <= 1:
+    print("Es un palindromo")
+else:
+    print("No es un palindromo")
