@@ -38,3 +38,14 @@ def en_cima(pila):
 def tamanio(pila):
     """devuelve el numero de elementos en la pila."""
     return pila.tamanio
+
+def barrido(pila):
+    paux = Pila()
+    while (not pila_vacia(pila)):
+        dato = desapilar(pila)
+        print(dato.info)
+        apilar(paux, dato)
+    
+    while (not pila_vacia(paux)):
+        dato = desapilar(paux)
+        apilar(pila, dato)

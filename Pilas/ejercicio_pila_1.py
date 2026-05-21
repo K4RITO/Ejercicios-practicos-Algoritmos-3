@@ -2,7 +2,7 @@
 
 from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio
 
-corte = int(input("ingrese 1 para entrar 0 para salir:  "))
+corte = int(input("ingrese 1 para ingresar datos 0 para salir:  "))
 mi_pila = pila()
 contador = 0
 while corte != 0:
@@ -10,7 +10,7 @@ while corte != 0:
     apilar(mi_pila, fin)
     corte = int(input("Desea seguir 1= SI, 0= NO: "))
 
-elemento = int(input("ingrese el elemento: "))
+elemento = int(input("ingrese el elemento que quiere buscar en la pila: "))
 
 while pila_vacia(mi_pila) == False:
     dato = desapilar(mi_pila)
