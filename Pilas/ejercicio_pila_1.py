@@ -2,9 +2,10 @@
 
 from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
-corte = int(input("ingrese 1 para ingresar datos 0 para salir:  "))
+
 mi_pila = pila()
 contador = 0
+corte = int(input("presione una tecla para ingresar datos / 0 para salir:  "))
 while corte != 0:
     fin = int(input("Ingrese el dato: "))
     apilar(mi_pila, fin)

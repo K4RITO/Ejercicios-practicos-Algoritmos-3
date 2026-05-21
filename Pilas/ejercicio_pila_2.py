@@ -4,9 +4,7 @@ from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barr
 
 mi_pila = pila()
 pila_auxiliar = pila()
-
-corte = int(input("ingrese 1 para entrar 0 para salir:  "))
-
+corte = int(input("presione una tecla para ingresar datos / 0 para salir:  "))
 while corte != 0:
     fin = int(input("Ingrese el dato: "))
     apilar(mi_pila, fin)
@@ -18,8 +16,12 @@ while pila_vacia(mi_pila) == False:
         apilar(pila_auxiliar, dato)
     else:
         impar = dato
-        
+
 while pila_vacia(pila_auxiliar) == False:
     dato = desapilar(pila_auxiliar)
     apilar(mi_pila, dato)
-    print(dato)
+
+while pila_vacia(mi_pila) == False:
+    dato = desapilar(mi_pila)
+    print(dato)            
+
