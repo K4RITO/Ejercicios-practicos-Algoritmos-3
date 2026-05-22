@@ -39,32 +39,32 @@ ejercicios = {
 
         8: [
             "python",
-            r"Pilas\cartas.py"
+            r"Pilas\ejercicio_pila_8.py"
         ],
 
         9: [
             "python",
-            r"Pilas\factorial.py"
+            r"Pilas\ejercicio_pila_9.py"
         ],
 
         11: [
             "python",
-            r"Pilas\insertar_atenea.py"
+            r"Pilas\ejercicio_pila_11.py"
         ],
 
         13: [
             "python",
-            r"Pilas\contar_vocales.py"
+            r"Pilas\ejercicio_pila_13.py"
         ],
 
         14: [
             "python",
-            r"Pilas\encontrar_personajes.py"
+            r"Pilas\ejercicio_pila_14.py"
         ],
 
         17: [
             "python",
-            r"Pilas\ironman.py"
+            r"Pilas\ejercicio_pila_17"
         ]
     }
 }
@@ -78,10 +78,10 @@ lista_ejercicios_pilas = """
 7: Eliminar elemento i-ésimo
 8: Pila de cartas
 9: Factorial con pila
-11: 
-13: 
-14: 
-17: 
+11: determinar vocales
+13: trajes de iron-man
+14: ordenamiento creciente
+17: separar parrafo
 """
 print("Bienvenido al sistema de ejercicios")
 while (True):
