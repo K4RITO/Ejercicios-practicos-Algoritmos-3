@@ -5,7 +5,7 @@ mi_pila = pila()
 contador = 0
 lista = [] 
 lista_caracteres = []
-corte = int(input("presione una tecla para ingresar la palabra / 0 para salir:  "))
+corte = int(input("ingrese un numero para ingresar la palabra / 0 para salir:  "))
 
 while corte != 0:
     palabra = str(input("Ingrese la palabra: "))

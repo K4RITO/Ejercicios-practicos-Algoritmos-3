@@ -14,27 +14,27 @@ ejercicios = {
 
         3: [
             "python",
-            r"Pilas\reemplazar_valor.py"
+            r"Pilas\ejercicio_pila_3.py"
         ],
 
         4: [
             "python",
-            r"Pilas\invertir_pila.py"
+            r"Pilas\ejercicio_pila_4.py"
         ],
 
         5: [
             "python",
-            r"Pilas\palindromo.py"
+            r"Pilas\ejercicio_pila_5"
         ],
 
         6: [
             "python",
-            r"Pilas\palabra_inversa.py"
+            r"Pilas\ejercicio_pila_6"
         ],
 
         7: [
             "python",
-            r"Pilas\eliminar_elemento.py"
+            r"Pilas\ejercicio_pila_7.py"
         ],
 
         8: [
@@ -47,22 +47,22 @@ ejercicios = {
             r"Pilas\factorial.py"
         ],
 
-        10: [
+        11: [
             "python",
             r"Pilas\insertar_atenea.py"
         ],
 
-        11: [
+        13: [
             "python",
             r"Pilas\contar_vocales.py"
         ],
 
-        12: [
+        14: [
             "python",
             r"Pilas\encontrar_personajes.py"
         ],
 
-        13: [
+        17: [
             "python",
             r"Pilas\ironman.py"
         ]
@@ -78,10 +78,10 @@ lista_ejercicios_pilas = """
 7: Eliminar elemento i-ésimo
 8: Pila de cartas
 9: Factorial con pila
-10: Insertar Atenea en posición i
-11: Contar vocales
-12: Encontrar personajes de Star Wars
-13: Trajes de Iron Man
+11: 
+13: 
+14: 
+17: 
 """
 print("Bienvenido al sistema de ejercicios")
 while (True):

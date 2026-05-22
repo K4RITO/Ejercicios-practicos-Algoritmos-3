@@ -18,7 +18,7 @@ def apilar(pila, dato):
     pila.tamanio += 1
 
 def desapilar(pila):
-    """Desapila el dato en la cima d ela pila y lo devuelve."""
+    """Desapila el dato en la cima de la pila y lo devuelve."""
     x = pila.cima.info
     pila.cima = pila.cima.sig
     pila.tamanio -= 1
@@ -39,13 +39,15 @@ def tamanio(pila):
     """devuelve el numero de elementos en la pila."""
     return pila.tamanio
 
-def barrido(pila):
+def barrido(p):
+    """muestra el contenido de la pila sin perder los datos"""
     paux = pila()
-    while (not pila_vacia(pila)):
-        dato = desapilar(pila)
-        print(dato.info)
+
+    while (not pila_vacia(p)):
+        dato = desapilar(p)
+        print(dato)
         apilar(paux, dato)
     
     while (not pila_vacia(paux)):
         dato = desapilar(paux)
-        apilar(pila, dato)
+        apilar(p, dato)
