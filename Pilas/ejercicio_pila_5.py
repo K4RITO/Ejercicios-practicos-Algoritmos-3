@@ -15,7 +15,7 @@ while pila_vacia(mi_pila) == False:
     lista.append(dato)
 
 for dato in lista:
-    if lista[0] == lista [-1]:
+    if lista[0] == lista[-1]:
         del lista[0]
         del lista[-1]
     else:
