@@ -65,7 +65,23 @@ ejercicios = {
         17: [
             "python",
             r"Pilas\ejercicio_pila_17"
-        ]
+
+        ],
+        18: [
+            "python",
+            r"Pilas\ejercicio_pila_18"
+
+        ],
+        20: [
+            "python",
+            r"Pilas\ejercicio_pila_20"
+
+        ],
+        23: [
+            "python",
+            r"Pilas\ejercicio_pila_"
+        ],
+        
     }
 }
 lista_ejercicios_pilas = """
@@ -82,6 +98,9 @@ lista_ejercicios_pilas = """
 13: trajes de iron-man
 14: ordenamiento creciente
 17: separar parrafo
+18: ordenamiento de objetos de oficina
+20: movimiento de robot
+23: temperatura promedio de abril
 """
 print("Bienvenido al sistema de ejercicios")
 while (True):
