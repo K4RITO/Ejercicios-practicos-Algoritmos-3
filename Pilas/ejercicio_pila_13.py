@@ -29,7 +29,7 @@ while corte != 0:
     repetido = False
 
     # verificar repetidos
-    while not pila_vacia(trajes):
+    while pila_vacia(trajes) == False:
 
         dato = desapilar(trajes)
 
@@ -39,7 +39,7 @@ while corte != 0:
         apilar(aux, dato)
 
     # restaurar
-    while not pila_vacia(aux):
+    while pila_vacia(aux) == False:
         apilar(trajes, desapilar(aux))
 
 
@@ -59,7 +59,7 @@ while corte != 0:
 # agregar Mark LXXXV
 repetido = False
 
-while not pila_vacia(trajes):
+while pila_vacia(trajes) == False:
 
     dato = desapilar(trajes)
 

@@ -23,7 +23,7 @@ while corte != 0:
 
 print("\nCamino de regreso:\n")
 
-while not pila_vacia(movimientos):
+while pila_vacia(movimientos) == False:
 
     movimiento = desapilar(movimientos)
 
