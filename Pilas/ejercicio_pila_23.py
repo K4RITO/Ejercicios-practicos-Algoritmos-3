@@ -20,7 +20,7 @@ encima_media = 0
 debajo_media = 0
 bandera = True
 
-while not pila_vacia(temperaturas):
+while pila_vacia(temperaturas) == False:
     dato = desapilar(temperaturas)
     apilar(pila_auxiliar, dato)
     suma += dato
