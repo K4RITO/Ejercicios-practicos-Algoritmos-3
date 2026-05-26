@@ -14,10 +14,8 @@ from tda_pila import pila, apilar, desapilar, pila_vacia
 
 
 trajes = pila()
-aux = pila()
+pila_auxiliar = pila()
 
-
-# CARGA
 corte = 1
 
 while corte != 0:
@@ -28,7 +26,6 @@ while corte != 0:
 
     repetido = False
 
-    # verificar repetidos
     while pila_vacia(trajes) == False:
 
         dato = desapilar(trajes)
@@ -36,11 +33,10 @@ while corte != 0:
         if dato[0] == modelo and dato[1] == pelicula:
             repetido = True
 
-        apilar(aux, dato)
+        apilar(pila_auxiliar, dato)
 
-    # restaurar
-    while pila_vacia(aux) == False:
-        apilar(trajes, desapilar(aux))
+    while pila_vacia(pila_auxiliar) == False:
+        apilar(trajes, desapilar(pila_auxiliar))
 
 
     if repetido == False:
@@ -55,8 +51,6 @@ while corte != 0:
 
     corte = int(input("Desea ingresar otro? 1 = SI / 0 = NO: "))
 
-
-# agregar Mark LXXXV
 repetido = False
 
 while pila_vacia(trajes) == False:
@@ -66,22 +60,19 @@ while pila_vacia(trajes) == False:
     if dato[0] == "Mark LXXXV" and dato[1] == "Avengers: Endgame":
         repetido = True
 
-    apilar(aux, dato)
+    apilar(pila_auxiliar, dato)
 
-
-while not pila_vacia(aux):
-    apilar(trajes, desapilar(aux))
+while pila_vacia(pila_auxiliar) == False:
+    apilar(trajes, desapilar(pila_auxiliar))
 
 
 if repetido == False:
 
     apilar(trajes, ["Mark LXXXV", "Avengers: Endgame", "Impecable"])
 
-
-# RECORRIDO
 hulkbuster = False
 
-while not pila_vacia(trajes):
+while pila_vacia(trajes) == False:
 
     dato = desapilar(trajes)
 
@@ -89,41 +80,29 @@ while not pila_vacia(trajes):
     pelicula = dato[1]
     estado = dato[2]
 
-
-    # a
     if modelo == "Mark XLIV":
 
         hulkbuster = True
 
         print("Hulkbuster usada en:", pelicula)
 
-
-    # b
     if estado.lower() == "dañado":
 
         print("Traje dañado:", modelo)
 
-
-    # c
     if estado.lower() == "destruido":
 
         print("Eliminando traje destruido:", modelo)
-
     else:
-        apilar(aux, dato)
+        apilar(pila_auxiliar, dato)
 
-
-    # f
     if pelicula == "Spider-Man: Homecoming" or pelicula == "Capitan America: Civil War":
 
         print("Traje usado en", pelicula, ":", modelo)
 
+while pila_vacia(pila_auxiliar) == False:
 
-# restaurar sin destruidos
-while not pila_vacia(aux):
-
-    apilar(trajes, desapilar(aux))
-
+    apilar(trajes, desapilar(pila_auxiliar))
 
 if hulkbuster == False:
     print("No se utilizo Hulkbuster")
