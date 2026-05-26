@@ -17,6 +17,7 @@ contador_consonantes = 0
 contador_otros = 0
 contador_espacios = 0
 contador_numeros = 0
+contiene_z = False
 
 parrafo = input("Ingrese un parrafo terminado en punto: ")
 
@@ -45,14 +46,16 @@ for caracter in parrafo:
 
 total = contador_vocales + contador_consonantes + contador_otros
 
-porcentaje = ((contador_vocales + contador_consonantes) * 100) / total
+porcentaje_vocales = (contador_vocales * 100) / total
+porcentaje_consonantes = (contador_consonantes * 100) / total
 
 print("Cantidad de vocales:", contador_vocales)
 print("Cantidad de consonantes:", contador_consonantes)
 print("Cantidad de otros:", contador_otros)
 print("Cantidad de espacios:", contador_espacios)
 print("Cantidad de numeros:", contador_numeros)
-print("Porcentaje de letras sobre total:", porcentaje, "%")
+print("Porcentaje de vocales:", porcentaje_vocales, "%")
+print("Porcentaje de consonantes:", porcentaje_consonantes, "%")
 
 if contador_vocales == contador_otros:
     print("Vocales y otros son iguales")

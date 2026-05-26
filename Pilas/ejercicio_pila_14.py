@@ -8,12 +8,12 @@ corte = int(input("presione un numero para ingresar un dato / 0 para salir:  "))
 while corte != 0:
     numero = int(input("Ingrese un numero: "))
     
-    while (not pila_vacia(mi_pila)) and (en_cima(mi_pila) > numero):
+    while pila_vacia(mi_pila) == False and (en_cima(mi_pila) > numero):
         dato = desapilar(mi_pila)
         apilar(pila_auxiliar, dato)
     apilar(mi_pila, numero)
 
-    while not pila_vacia(pila_auxiliar):
+    while pila_vacia(pila_auxiliar) == False:
         dato = desapilar(pila_auxiliar)
         apilar(mi_pila, dato)
     corte = int(input("Desea seguir? 1=SI / 0=NO: "))

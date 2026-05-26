@@ -21,7 +21,5 @@ while pila_vacia(pila_auxiliar) == False:
     dato = desapilar(pila_auxiliar)
     apilar(mi_pila, dato)
 
-while pila_vacia(mi_pila) == False:
-    dato = desapilar(mi_pila)
-    print(dato)            
+barrido(mi_pila)      
 
