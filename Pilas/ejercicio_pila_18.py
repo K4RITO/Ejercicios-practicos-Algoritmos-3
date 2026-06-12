@@ -1,5 +1,5 @@
 """Dada una pila de objetos de una oficina de los que se dispone de su nombre y peso(por ejemplo monitor 1kg, teclado 0.25kg, silla 7kg, etc.), ordenar dicha pila de acuerdo a su peso del objeto mas liviano al mas pesado. Solo pueden utilizar pilas auxiliares como estructuras extras,no se pueden utilizar métodos de ordenamiento."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, barrido
 
 mi_pila = pila()
 pila_auxiliar = pila()

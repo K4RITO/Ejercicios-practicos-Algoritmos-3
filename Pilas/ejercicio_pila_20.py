@@ -3,7 +3,7 @@ cantidad de pasos y dirección suponga que el robot solo puede moverse en ocho d
 norte, sur, este, oeste, noreste, noroeste, sureste y suroeste. Luego desarrolle otro algoritmo
 que genere la secuencia de movimientos necesarios para hacer volver al robot a su lugar de
 partida, retornando por el mismo camino que fue."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia
 
 movimientos = pila()
 

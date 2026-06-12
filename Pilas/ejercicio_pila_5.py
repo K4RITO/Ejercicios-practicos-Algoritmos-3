@@ -1,5 +1,5 @@
 """Determinar si una cadena de caracteres es un palíndromo."""
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 lista = []

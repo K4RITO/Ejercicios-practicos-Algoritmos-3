@@ -3,7 +3,7 @@ obtener la siguiente información sin perder los datos:
 a. determinar el rango de temperatura del mes, temperatura mínima y máxima;
 b. calcular el promedio de temperatura (o media) del total de valores;
 c. determinar la cantidad de valores por encima y por debajo de la media."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia
 
 temperaturas = pila()
 pila_auxiliar = pila()

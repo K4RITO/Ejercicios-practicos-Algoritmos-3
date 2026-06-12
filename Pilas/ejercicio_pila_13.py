@@ -10,7 +10,7 @@ e. agregar el modelo Mark LXXXV a la pila, tener en cuenta que no se pueden carg
 repetidos en una misma película;
 f. mostrar los nombre de los trajes utilizados en las películas “Spider-Man: Homecoming” y
 “Capitan America: Civil War”."""
-from tda_pila import pila, apilar, desapilar, pila_vacia
+from .tda_pila import pila, apilar, desapilar, pila_vacia
 
 
 trajes = pila()

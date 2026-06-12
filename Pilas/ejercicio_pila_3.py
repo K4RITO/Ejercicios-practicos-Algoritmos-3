@@ -1,5 +1,5 @@
 """Reemplazar todas las ocurrencias de un determinado elemento en una pila."""
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 
 mi_pila = pila()

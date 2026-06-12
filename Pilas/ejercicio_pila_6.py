@@ -1,5 +1,5 @@
 """Leer una palabra y visualizarla en forma inversa."""
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 contador = 0

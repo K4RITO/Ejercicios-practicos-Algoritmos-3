@@ -4,86 +4,133 @@ ejercicios = {
     "Pilas": {
         1: [
             "python",
-            r"Pilas/ejercicio_pila_1.py"
+            "-m"
+            "Pilas.ejercicio_pila_1"
         ],
 
         2: [
             "python",
-            r"Pilas\ejercicio_pila_2.py"
+            "-m"
+            "Pilas.ejercicio_pila_2"
         ],
 
         3: [
             "python",
-            r"Pilas\ejercicio_pila_3.py"
+            "-m"
+            "Pilas.ejercicio_pila_3"
         ],
 
         4: [
             "python",
-            r"Pilas\ejercicio_pila_4.py"
+            "-m"
+            "Pilas.ejercicio_pila_4"
         ],
 
         5: [
             "python",
-            r"Pilas\ejercicio_pila_5"
+            "-m"
+            "Pilas.ejercicio_pila_5"
         ],
 
         6: [
             "python",
-            r"Pilas\ejercicio_pila_6"
+            "-m"
+            "Pilas.ejercicio_pila_6"
         ],
 
         7: [
             "python",
-            r"Pilas\ejercicio_pila_7.py"
+            "-m"
+            "Pilas.ejercicio_pila_7"
         ],
 
         8: [
             "python",
-            r"Pilas\ejercicio_pila_8.py"
+            "-m"
+            "Pilas.ejercicio_pila_8"
         ],
 
         9: [
             "python",
-            r"Pilas\ejercicio_pila_9.py"
+            "-m"
+            "Pilas.ejercicio_pila_9"
         ],
 
         11: [
             "python",
-            r"Pilas\ejercicio_pila_11.py"
+            "-m"
+            "Pilas.ejercicio_pila_11"
         ],
 
         13: [
             "python",
-            r"Pilas\ejercicio_pila_13.py"
+            "-m"
+            "Pilas.ejercicio_pila_13"
         ],
 
         14: [
             "python",
-            r"Pilas\ejercicio_pila_14.py"
+            "-m"
+            "Pilas.ejercicio_pila_14"
         ],
 
         17: [
             "python",
-            r"Pilas\ejercicio_pila_17"
+            "-m"
+            "Pilas.ejercicio_pila_17"
 
         ],
         18: [
             "python",
-            r"Pilas\ejercicio_pila_18"
-
+            "-m"
+            "Pilas.ejercicio_pila_18"
         ],
         20: [
             "python",
-            r"Pilas\ejercicio_pila_20"
+            "-m"
+            "Pilas.ejercicio_pila_20"
 
         ],
         23: [
             "python",
-            r"Pilas\ejercicio_pila_"
+            "-m"
+            "Pilas.ejercicio_pila_23"
         ],
-        
-    }
+    },
+    
+    "Colas": {
+        1: [
+        "python",
+        "-m",
+        "Colas.ejercicio_cola_1"
+    ],
+        2: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_2"
+    ],
+       3: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_3"
+    ],
+       4: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_4"
+    ],
+           5: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_5"
+    ],
+    
+    
+},
+    
 }
+
+
 lista_ejercicios_pilas = """
 1: Ocurrencias de un elemento
 2: Eliminar elementos impares
@@ -102,12 +149,24 @@ lista_ejercicios_pilas = """
 20: movimiento de robot
 23: temperatura promedio de abril
 """
+lista_ejercicios_colas = """
+1: Eliminar vocales
+2: Invertir el contenido de una cola
+3: Palíndromo
+4: Eliminar numero NO primos
+5: Invertir el contenido de una pila
+"""
+
 print("Bienvenido al sistema de ejercicios")
 while (True):
     print("")
-    opcion = input("Que tipo ejercicios desea ver (Pilas): ").lower()
+    opcion = input("Ingrese el nombre del tipo ejercicios desea ver (Pilas),(Colas): ").lower()
     if (opcion == "pilas"):
         print(lista_ejercicios_pilas)
         opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
         subprocess.run(ejercicios["Pilas"][opcion])
+    elif (opcion == "colas"):
+        print(lista_ejercicios_colas)
+        opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
+        subprocess.run(ejercicios["Colas"][opcion])
         

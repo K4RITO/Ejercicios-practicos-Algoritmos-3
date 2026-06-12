@@ -5,7 +5,7 @@ c. porcentaje que representan las vocales respecto de las consonantes sobre el t
 d. cantidad de números;
 e. determinar si la cantidad de vocales y otros caracteres son iguales;
 f. determinar si existe al menos una z en la pila de consonantes."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 
 pila_vocales = pila()

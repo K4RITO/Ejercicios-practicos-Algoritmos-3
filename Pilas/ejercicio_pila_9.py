@@ -1,5 +1,5 @@
 """Resolver el problema del factorial de un número utilizando una pila."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 

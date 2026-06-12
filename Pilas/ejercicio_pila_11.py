@@ -1,5 +1,5 @@
 """Dada una pila de letras determinar cuántas vocales contiene."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 contador = 0

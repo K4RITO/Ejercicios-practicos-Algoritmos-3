@@ -1,5 +1,5 @@
 """Realizar un algoritmo que permita ingresar elementos en una pila, y que estos queden ordenados de forma creciente. Solo puede utilizar una pila auxiliar como estructura extra no se pueden utilizar métodos de ordenamiento."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 pila_auxiliar = pila()

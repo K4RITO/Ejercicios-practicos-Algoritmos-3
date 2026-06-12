@@ -3,7 +3,7 @@ cartas de baraja española,resolver las siguientes actividades:
 a. generar las cartas del mazo de forma aleatoria;
 b. separar la pila mazo en cuatro pilas una por cada palo;
 c. ordenar una de las cuatro pilas (espada, basto, copa u oro) de manera creciente."""
-from tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 import random
 

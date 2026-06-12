@@ -1,5 +1,5 @@
 """Eliminar el i-ésimo elemento debajo de la cima de una pila de palabras."""
-from tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
 
 mi_pila = pila()
 pila_auxiliar = pila()
