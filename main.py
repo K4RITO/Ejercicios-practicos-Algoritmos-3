@@ -124,7 +124,21 @@ ejercicios = {
     "-m",
     "Colas.ejercicio_cola_5"
     ],
-    
+           6: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_6"
+    ],
+    7: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_7"
+    ],
+    8: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_8"
+    ],
     
 },
     
@@ -155,6 +169,9 @@ lista_ejercicios_colas = """
 3: Palíndromo
 4: Eliminar numero NO primos
 5: Invertir el contenido de una pila
+6: Determinar numero de ocurrencias
+7: Eliminar elemento
+8: Ordenar elementos
 """
 
 print("Bienvenido al sistema de ejercicios")
