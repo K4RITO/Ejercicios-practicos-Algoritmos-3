@@ -139,6 +139,12 @@ ejercicios = {
     "-m",
     "Colas.ejercicio_cola_8"
     ],
+    9: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_9"
+    ],
+    
     
 },
     
@@ -172,6 +178,7 @@ lista_ejercicios_colas = """
 6: Determinar numero de ocurrencias
 7: Eliminar elemento
 8: Ordenar elementos
+9: Calcular rango y contar elementos
 """
 
 print("Bienvenido al sistema de ejercicios")

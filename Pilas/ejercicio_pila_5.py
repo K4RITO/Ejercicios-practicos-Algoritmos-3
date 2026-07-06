@@ -1,27 +1,25 @@
 """Determinar si una cadena de caracteres es un palíndromo."""
-from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio
+from .validaciones import validar_string, validar_numero
+
 
 mi_pila = pila()
-lista = []
-corte = int(input("ingrese un numero para ingresar datos / 0 para salir:  "))
 
-while corte != 0:
-    fin = int(input("Ingrese el dato: "))
-    apilar(mi_pila, fin)
-    corte = int(input("Desea seguir 1= SI, 0= NO: "))
+dato = validar_string("Ingrese la cadena: ").lower() 
 
-while pila_vacia(mi_pila) == False:
-    dato = desapilar(mi_pila)
-    lista.append(dato)
 
-for dato in lista:
-    if lista[0] == lista[-1]:
-        del lista[0]
-        del lista[-1]
-    else:
+for caracter in dato:
+    apilar(mi_pila, caracter)
+
+
+lista = list(dato)
+
+for caracter_original in lista: 
+    if pila_vacia(mi_pila):
         break
+    caracter_pila = desapilar(mi_pila)  
+    if caracter_original != caracter_pila:
+        print("No es un palíndromo")
 
-if len(lista) <= 1:
-    print("Es un palindromo")
-else:
-    print("No es un palindromo")
+
+print("Es un palíndromo")

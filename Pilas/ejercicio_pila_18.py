@@ -1,16 +1,22 @@
 """Dada una pila de objetos de una oficina de los que se dispone de su nombre y peso(por ejemplo monitor 1kg, teclado 0.25kg, silla 7kg, etc.), ordenar dicha pila de acuerdo a su peso del objeto mas liviano al mas pesado. Solo pueden utilizar pilas auxiliares como estructuras extras,no se pueden utilizar métodos de ordenamiento."""
 from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, barrido
-
+from .validaciones import validar_numero, validar_string, validar_float
 mi_pila = pila()
 pila_auxiliar = pila()
 corte = 1
 
 while corte != 0:
-    item = input("Ingrese el nombre del objeto: ")
-    peso = float(input("Ingrese el peso del objeto en kg: "))
+    item = validar_string("Ingrese el nombre del objeto: ")
+    peso = validar_float("Ingrese el peso del objeto en kg: ")
     objeto = [item, peso]
     apilar(mi_pila, objeto)
-    corte = int(input("Desea ingresar otro? 1 = SI / 0 = NO: "))
+    corte = validar_numero("Desea ingresar otro? 1 = SI / 0 = NO: ")
+    while corte != 0 and corte != 1:
+        print("Numero invalido")
+        corte = validar_numero("Desea ingresar otro? 1 = SI / 0 = NO: ")
+
+print("\nPila original:")
+barrido(mi_pila)
 
 while  pila_vacia(mi_pila) == False:
     dato = desapilar(mi_pila)

@@ -54,8 +54,8 @@ print("Cantidad de consonantes:", contador_consonantes)
 print("Cantidad de otros:", contador_otros)
 print("Cantidad de espacios:", contador_espacios)
 print("Cantidad de numeros:", contador_numeros)
-print("Porcentaje de vocales:", porcentaje_vocales, "%")
-print("Porcentaje de consonantes:", porcentaje_consonantes, "%")
+print(f"Las vocales representan el {porcentaje_vocales:.2f}% del total de caracteres.")
+print(f"Las consonantes representan el {porcentaje_consonantes:.2f}% del total de caracteres.")
 
 if contador_vocales == contador_otros:
     print("Vocales y otros son iguales")

@@ -1,9 +1,10 @@
 """Resolver el problema del factorial de un número utilizando una pila."""
 from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .validaciones import validar_numero,validar_string
 
 mi_pila = pila()
 
-numero = int(input("Ingrese el numero a factorizar: "))
+numero = validar_numero("Ingrese el numero a factorizar: ")
 
 for i in range(1, numero + 1):
     apilar(mi_pila, i)

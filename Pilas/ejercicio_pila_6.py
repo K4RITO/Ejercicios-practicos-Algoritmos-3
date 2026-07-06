@@ -1,14 +1,19 @@
 """Leer una palabra y visualizarla en forma inversa."""
 from .tda_pila import pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
-
+from .validaciones import validar_numero, validar_string
 mi_pila = pila()
 contador = 0
 lista = [] 
 lista_caracteres = []
-corte = int(input("ingrese un numero para ingresar la palabra / 0 para salir:  "))
+corte = validar_numero("Ingrese 1 para ingresar una palabra / 0 para salir: ")
+
+while corte != 0 and corte != 1:
+    print("Numero invalido")
+    corte = validar_numero("Ingrese 1 para ingresar una palabra / 0 para salir: ")
+
 
 while corte != 0:
-    palabra = str(input("Ingrese la palabra: "))
+    palabra = validar_string("Ingrese la palabra: ")
     for caracter in palabra:
         lista_caracteres.append(caracter)
     corte = 0
@@ -24,5 +29,5 @@ while pila_vacia(mi_pila) == False:
     lista.append(dato)
     
 palabra_inversa = "".join(lista)
-print(palabra)
-print(palabra_inversa)
+print(f"palabra inicial: {palabra}")
+print(f"palabra invertida: {palabra_inversa}")

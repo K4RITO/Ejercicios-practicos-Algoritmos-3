@@ -1,15 +1,23 @@
 """Dada una pila de letras determinar cuántas vocales contiene."""
 from .tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio, barrido
+from .validaciones import validar_numero, validar_string
 
 mi_pila = pila()
 contador = 0
 
-corte = int(input("presione un numero para ingresar una letra / 0 para salir:  "))
+corte = validar_numero("Ingrese 1 para ingresar una palabra / 0 para salir: ")
+
+while corte != 0 and corte != 1:
+    print("Numero invalido")
+    corte = validar_numero("Ingrese 1 para ingresar una palabra / 0 para salir: ")
 
 while corte != 0:
-    letra = input("Ingrese la letra: ")
+    letra = validar_string("Ingrese la letra: ")
     apilar(mi_pila, letra)
-    corte = int(input("Desea seguir 1= SI, 0= NO: "))
+    corte = validar_numero("Desea seguir 1=SI / 0=NO:  ")
+    while corte != 0 and corte != 1:
+        print("Numero invalido")
+        corte = validar_numero("Desea seguir 1=SI / 0=NO:  ")
 
 while pila_vacia(mi_pila) == False:
     letra = desapilar(mi_pila)

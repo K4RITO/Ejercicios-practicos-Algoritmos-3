@@ -11,18 +11,23 @@ repetidos en una misma película;
 f. mostrar los nombre de los trajes utilizados en las películas “Spider-Man: Homecoming” y
 “Capitan America: Civil War”."""
 from .tda_pila import pila, apilar, desapilar, pila_vacia
+from .validaciones import validar_numero, validar_string
 
 
 trajes = pila()
 pila_auxiliar = pila()
 
-corte = 1
+corte = validar_numero("Desea ingresar un traje 1 = SI / 0 para salir:  ")
+
+while corte != 0 and corte != 1:
+    print("Numero invalido")
+    corte = validar_numero("Desea ingresar un traje 1 = SI / 0 para salir: ")
 
 while corte != 0:
 
-    modelo = input("Ingrese modelo: ")
-    pelicula = input("Ingrese pelicula: ")
-    estado = input("Ingrese estado: ")
+    modelo = validar_string("Ingrese modelo: ")
+    pelicula = validar_string("Ingrese pelicula: ")
+    estado = validar_string("Ingrese estado: ")
 
     repetido = False
 
@@ -49,7 +54,10 @@ while corte != 0:
         print("Ese modelo ya existe en esa pelicula")
 
 
-    corte = int(input("Desea ingresar otro? 1 = SI / 0 = NO: "))
+    corte = validar_numero("Desea ingresar otro? 1 = SI / 0 = NO: ")
+    while corte != 0 and corte != 1:
+        print("Numero invalido")
+        corte = validar_numero("Desea ingresar otro? 1 = SI / 0 = NO: ")
 
 repetido = False
 
