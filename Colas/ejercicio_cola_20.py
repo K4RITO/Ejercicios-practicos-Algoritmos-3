@@ -19,9 +19,6 @@ cabina2 = cola()
 cabina3 = cola()
 
 
-
-# ---------------- Crear vehículo ----------------
-
 def crear_vehiculo():
     tipo = randint(1,4)
 

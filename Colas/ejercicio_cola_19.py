@@ -1,14 +1,10 @@
 """19. Modificar las funciones de arribo y atención del TDA cola para adaptarlo a una cola circular,
-
-que no necesite la función mover al final; y desarrollar un función que permita realizar un ba-
-rrido de dicha estructura respetando el principio de funcionamiento de la cola."""
+que no necesite la función mover al final; y desarrollar un función que permita realizar un barrido de dicha estructura respetando el principio de funcionamiento de la cola."""
 
 from .tda_cola import cola, nodocola, arribo, atencion, cola_vacia, tamanio, barrido,en_frente
 from .validaciones import validar_numero
 
-
-
-def atencion_circular(cola):
+def atencion_cir(cola):
     """ABSTRACCION: Atiende el elemento en el frente de la cola circular y lo devuelve."""
     if cola_vacia(cola):
         return
@@ -22,7 +18,7 @@ def atencion_circular(cola):
     cola.tamanio -= 1
     return dato
 
-def arribo_circular(cola, dato):
+def arribo_cir(cola, dato):
     """ABSTRACCION: Arriba el dato al final de la cola circular."""
     nodo = nodocola()
     nodo.info = dato
@@ -35,20 +31,19 @@ def arribo_circular(cola, dato):
     cola.final = nodo
     cola.tamanio += 1
 
-def mover_al_final_circular(cola):
+def mover_al_final_cir(cola):
     """ABSTRACCION: Hace que los punteros cola.final y cola.frente apunten al nodo siguiente y devuelve el dato que estaba en el frente"""
     dato = cola.frente.info
     cola.final = cola.frente         
     cola.frente = cola.frente.sig    
     return dato
 
-def barrido_circular(cola):
+def barrido_cir(cola):
     """ABSTRACCION: Recorre una cola circular sin modificar su estructura."""
     if cola_vacia(cola):
         return
-
+    
     aux = cola.frente
-
     while True:
         print(aux.info)
 
@@ -60,13 +55,13 @@ def barrido_circular(cola):
 mi_cola = cola()
 
 while(True):
-    opcion = validar_numero("Opciones: 1 - Agregar un dato, 2 - Eliminar un dato, 3 - recorrer la estructura, 0 - Salir: ")
+    opcion = validar_numero("Opciones: 1 - Agregar dato, 2 - Eliminar dato, 3 - Mostrar datos, 0 - Salir: ")
     if (opcion == 1):
         dato = input("Escriba el dato a ingresar: ")
-        arribo_circular(mi_cola, dato)
+        arribo_cir(mi_cola, dato)
     if (opcion == 2):
-        dato = atencion_circular(mi_cola)
+        dato = atencion_cir(mi_cola)
         print(dato)
     if (opcion == 3):
-        barrido_circular(mi_cola)
+        barrido_cir(mi_cola)
     if (opcion == 0): break

@@ -19,14 +19,18 @@ cola_2 = cola()
 
 # ---------------- Punto A ----------------
 
-for i in range(1000):
+turnos_generados = set()
+
+while len(turnos_generados) < 1000:
 
     letra = random.choice("ABCDEF")
     numero = random.randint(0, 999)
 
     turno = letra + str(numero).zfill(3)
 
-    arribo(mi_cola, turno)
+    if turno not in turnos_generados:
+        turnos_generados.add(turno)
+        arribo(mi_cola, turno)
 
 # ---------------- Punto B ----------------
 
