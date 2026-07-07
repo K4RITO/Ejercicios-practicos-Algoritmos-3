@@ -2,17 +2,20 @@
 si es un palíndromo."""
 
 from .tda_cola import nodocola, cola, arribo, atencion, cola_vacia, en_frente, tamanio, mover_al_final, barrido
-
 from Pilas.tda_pila import nodopila, pila, apilar, desapilar, pila_vacia, en_cima, tamanio
+from .validaciones import validar_numero, validar_string
 
 mi_pila = pila()
 mi_cola = cola()
 cola_auxiliar = cola()
 contador = 0
 
-corte = True
+corte = validar_numero("Desea ingresar una cadena de caracteres: 1 = si, 0 = Salir: ")
+while corte != 0 and corte != 1:
+        print("Numero invalido")
+        corte = validar_numero("Desea ingresar una cadena de caracteres: 1 = si, 0 = Salir: ")
 
-while corte == True:
+while corte != 0:
     dato = input("Ingrese la secuencia de caracteres: ")
     caracteres = list(dato)
     for i in caracteres:    

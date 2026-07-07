@@ -142,3 +142,28 @@ def validar_contrasenia(mensaje):
             continue
             
         return clave
+    
+def validar_float(mensaje):
+    """
+    ABSTRACCIÓN: Solicita y devuelve un número flotante válido.
+    - Entrada: Un string con el mensaje para el usuario (ej: "Ingrese peso: ").
+    - Salida: Un valor de tipo FLOAT. No retorna hasta que la entrada sea válida.
+    """
+    while True:
+        entrada = input(mensaje)
+        flotante = entrada.replace(".","")
+        if entrada == "":
+            print("Error: El campo no puede quedar vacío.")
+            continue
+            
+        es_numero_valido = True
+        for caracter in entrada:
+            if not ('0' <= flotante <= '9'):
+                es_numero_valido = False
+                break
+                
+                
+        if es_numero_valido == True:
+            return float(entrada)
+        else:
+            print("Error: Debe ingresar un número válido.")

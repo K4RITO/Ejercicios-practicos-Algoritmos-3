@@ -144,6 +144,57 @@ ejercicios = {
     "-m",
     "Colas.ejercicio_cola_9"
     ],
+    10: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_10"
+    ],
+    12: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_12"
+    ],
+    13: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_13"
+    ],
+    14: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_14"
+    ],
+    15: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_15"
+    ],
+    16: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_16"
+    ],
+    18: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_18"
+    ],
+    19: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_19"
+    ],
+    20: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_20"
+    ],
+    21: [
+    "python",
+    "-m",
+    "Colas.ejercicio_cola_21"
+    ],
+    
     
     
 },
@@ -179,6 +230,16 @@ lista_ejercicios_colas = """
 7: Eliminar elemento
 8: Ordenar elementos
 9: Calcular rango y contar elementos
+10: Notificaciones de aplicacion
+12: Combinar colas
+13: Generar caracteres aleatoriamente
+14: Semaforo
+15: Fórmula de Haversine
+16: Cola de prioridad
+18: Turnos
+19: Cola circular
+20: Puesto de peaje
+21: Adminitrar Aeropuerto
 """
 
 print("Bienvenido al sistema de ejercicios")
