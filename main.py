@@ -194,11 +194,62 @@ ejercicios = {
     "-m",
     "Colas.ejercicio_cola_21"
     ],
-    
-    
-    
-},
-    
+    },
+
+    "Listas": {
+    1: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_1"
+    ],
+    2: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_2"
+    ],
+    3: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_3"
+    ],
+    4: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_4"
+    ],
+    5: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_5"
+    ],
+    7: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_7"
+    ],
+    8: [
+        "python",
+        "-m",
+        "Listas.ejercicio_lista_8"
+    ],
+    9: [
+            "python",
+            "-m",
+            "Listas.ejercicio_lista_9"
+        ],
+    14: [
+                "python",
+                "-m",
+                "Listas.ejercicio_lista_14"
+            ],
+    16: [
+                    "python",
+                    "-m",
+                    "Listas.ejercicio_lista_16"
+                ],
+
+    },
+        
 }
 
 
@@ -241,11 +292,23 @@ lista_ejercicios_colas = """
 20: Puesto de peaje
 21: Adminitrar Aeropuerto
 """
+lista_ejercicios_listas = """
+1: contador de nodos    
+2: eliminar vocales
+3: dividir paridad
+4: insertar nodos
+5: eliminar primos
+7: concatener listas
+8: palindromo lista enlazada
+9: cargar alumnos al curso
+14: dados
+16: proyecto de software
+"""
 
 print("Bienvenido al sistema de ejercicios")
 while (True):
     print("")
-    opcion = input("Ingrese el nombre del tipo ejercicios desea ver (Pilas),(Colas): ").lower()
+    opcion = input("Ingrese el nombre del tipo ejercicios desea ver (Pilas),(Colas),(Listas): ").lower()
     if (opcion == "pilas"):
         print(lista_ejercicios_pilas)
         opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
@@ -254,4 +317,8 @@ while (True):
         print(lista_ejercicios_colas)
         opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
         subprocess.run(ejercicios["Colas"][opcion])
+    elif (opcion == "listas"):
+        print(lista_ejercicios_listas)
+        opcion = int(input("Escriba el numero del ejercicio que desea ejecutar: "))
+        subprocess.run(ejercicios["Listas"][opcion])
         
